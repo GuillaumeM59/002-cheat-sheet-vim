@@ -16,17 +16,59 @@
       <h1>Déplacement:</h1>
       <p>
       h(gauche) k(haut) l(droite) j(bas)  se deplacer.<br/>
-n  décalle au mot suivant (1ere lettre).<br/>
-e  décalle au mot suivant (dernière lettre).<br/>
-0  première lettre de la ligne.<br/>
-gg  debut du fichier.<br/>
-G  fin du fichier.<br/>
-c#nombre#w  déplace de #nombre mot(s).<br/>
-%  deplace au ) ] } correspondant à celui où l'on est.<br/>
-/#mot  recherche #mot.<br/>
-	n   #mot suivant.<br/>
-	N   #mot précédent.<br/>
+      n  décalle au mot suivant (1ere lettre).<br/>
+      e  décalle au mot suivant (dernière lettre).<br/>
+      0  première lettre de la ligne.<br/>
+      gg  debut du fichier.<br/>
+      G  fin du fichier.<br/>
+      c#nombre#w  déplace de #nombre mot(s).<br/>
+      %  deplace au ) ] } correspondant à celui où l'on est.<br/>
+      /#mot  recherche #mot.<br/>
+	    n   #mot suivant.<br/>
+	    N   #mot précédent.
         </p>
+    </section>
+    <section>
+      <h2>actions générales:</h2>
+      <p>:q!  quitter sans sauv.<br/>
+        :wq  sauve et quitte.<br/>
+        :w  sauvegarde.<br/>
+        :set #option active l'#option.<br/>
+        ic ignore la prochaine recherche.<br/>
+        is montre les appariments partiels<br/>
+        hls met en surbrillance les mêmes mots.<br/>
+        :help #commance  affiche l'aide de la #commande.<br/>
+        u  annuler.<br/>
+        ctrl R annuler l'annulé.
+      </p>
+    </section>
+    <section>
+      <h2>Actions directes:</h2>
+      <p>x  supprimer.<br/>
+        d  effacer.<br/>
+        dw efface le mot.<br/>
+        d$ efface le reste.<br/>
+        dd  couper.<br/>
+        y  copier.<br/>
+        p  coller.<br/>
+        o insert une ligne sous le curseur.<br/>
+        O insert une ligne sur le curseur.<br/>
+        :s/#mot1/#mot2/g   remplace #mot1 par #mot2.<br/>
+        :%s/#mot1/mot2   remplace tous les #mot1 par #mot2.
+      </p>
+    </section>
+    <section>
+      <h2>Modes:</h2>
+      <p>
+        <ul><li>i  insertion</li>
+          <li>a  ajout</li>
+          <li>r remplacement</li>
+          <li>v  vision (permet la selection)</li>
+        </ul>
+
+        <br/>en mode v:<br/>
+        :r #nom insert ce que contient #nom.</p>
+      </p>
     </section>
   </body>
 </html>
