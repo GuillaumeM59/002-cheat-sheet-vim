@@ -8,13 +8,19 @@
   </head>
   <body>
     <header>
-          <h1>VIM</h1>
-      <p>
-        Les Cheat-Sheet à la Guytou
-      </p>
+      <h1>VIM</h1>
+      <p>Les Cheat-Sheet à la Guytou</p>
     </header>
-    <section>
-      <h2>Déplacement:</h2>
+    <nav id="menu">
+      <ul>
+        <li><a href="#deplacements">Déplacements</a></li>
+        <li><a href="#actgen">Actions générales</a></li>
+        <li><a href="#actdir">Actions directes</a></li>
+        <li><a href="#modes">Modes</a></li>
+      </ul>
+    </nav>
+    <section id="deplacements">
+      <h2>Déplacements:</h2>
       <ul>
         <li>h(gauche) k(haut) l(droite) j(bas)  se deplacer.</li>
         <li>n  décalle au mot suivant (1ere lettre)</li>
@@ -28,26 +34,27 @@
           <li>n   #mot suivant.</li>
           <li>N   #mot précédent.</li>
         </li>
-    </ul>
+      </ul>
     </section>
-    <section>
+    <section id="actgen" class="blocpair">
       <h2>actions générales:</h2>
-    <ul>
-      <li>:q!  quitter sans sauv.</li>
-      <li>:wq  sauve et quitte.</li>
-      <li>:w  sauvegarde.</li>
-      <li>:set #option active l'#option.
-        <li>ic ignore la prochaine recherche.</li>
-        <li>is montre les appariments partiels</li></li>
-        <li>hls met en surbrillance les mêmes mots.</li>
+      <ul>
+        <li>:q!  quitter sans sauv.</li>
+        <li>:wq  sauve et quitte.</li>
+        <li>:w  sauvegarde.</li>
+        <li>:set #option active l'#option.
+          <li>ic ignore la prochaine recherche.</li>
+          <li>is montre les appariments partiels</li>
+          <li>hls met en surbrillance les mêmes mots.</li></li>
         <li>:help #commance  affiche l'aide de la #commande.</li>
         <li>u  annuler.</li>
         <li>ctrl R annuler l'annulé.</li>
       </ul>
     </section>
-    <section>
+    <section id="actdir">
       <h2>Actions directes:</h2>
-      <ul><li>x  supprimer.</li>
+      <ul>
+        <li>x  supprimer.</li>
         <li>d  effacer.</li>
         <li>dw efface le mot.</li>
         <li>d$ efface le reste.</li>
@@ -60,15 +67,15 @@
         <li>:%s/#mot1/mot2   remplace tous les #mot1 par #mot2.</li>
         </ul>
     </section>
-    <section>
+    <section id="modes" class="blocpair">
       <h2>Modes:</h2>
-
-        <ul><li>i  insertion</li>
+        <ul>
+          <li>i  insertion</li>
           <li>a  ajout</li>
           <li>r remplacement</li>
           <li>v  vision (permet la selection)</li>
-        <li>en mode v:
-        <li >:r #nom insert ce que contient #nom.</li></li>
+          <li>en mode v:
+            <li >:r #nom insert ce que contient #nom.</li></li>
         </ul>
     </section>
   </body>

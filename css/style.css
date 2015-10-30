@@ -14,8 +14,8 @@ h2
  text-align: center;
  color: #BF987D;
 }
-p
-{
+p, ul
+{  list-style: none;
  font-family: "Dancing Script", cursive;
 }
 header
@@ -43,12 +43,13 @@ header p
  right: 0;
  top: 50%;
  width: 8em;
+
  margin-top: -2.5em;
  background-color: #7F6553;
  border: 2px solid black;
  border-radius: 20px 0 0 20px;
  border-right: none;
- list-style: none;
+
  padding-top: 1%;
  padding-bottom: 1%;
 }
@@ -73,8 +74,9 @@ section
  text-align: justify;
 
 }
-section p
-{padding-left: 2%;
+section ul
+{list-style: none;
+  padding-left: 2%;
  padding-right: 2%;
  font-size: 1.2em;
  color: #FFCAA7;
