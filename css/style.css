@@ -20,6 +20,7 @@ header {
   margin-right: 3%;
   margin-bottom: 5px;
   }
+    /*mise en forme et placement à droite du menu*/
 #menu {
   position: fixed;
   right: 0;
@@ -43,6 +44,7 @@ a {
   position: relative;
   left: 33%;
   }
+    /*mise en forme des blocs*/
 section {
  width: 50%;
  background-color: #40332A;
@@ -62,6 +64,7 @@ section ul {
   color: #FFCAA7;
   line-height: 1.5;
   }
+    /*mise en forme des caractères à taper*/
 section span {
   font-family: Arial;
   background-color: black;
