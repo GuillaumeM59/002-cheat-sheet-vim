@@ -29,11 +29,11 @@
         <li><span>0</span> première lettre de la ligne.</li>
         <li><span>gg</span> debut du fichier.</li>
         <li><span>G</span> fin du fichier.</li>
-        <li><span>c#nombre#w</span> déplace de #nombre mot(s).</li>
+        <li><span>c<pre>#nombre</pre>w</span> déplace de <pre>#nombre</pre> mot(s).</li>
         <li><span>%</span>  deplace au ) ] } correspondant à celui où l'on est.</li>
-        <li><span>/#mot</span>  recherche #mot.
-          <li><span>n</span>   #mot suivant.</li>
-          <li><span>N</span>   #mot précédent.</li>
+        <li><span>/<pre>#mot</pre></span>  recherche <pre>#mot</pre>.
+          <li><span>n</span>   <pre>#mot</pre> suivant.</li>
+          <li><span>N</span>   <pre>#mot</pre> précédent.</li>
         </li>
       </ul>
     </section>
@@ -43,11 +43,11 @@
         <li><span>:q!</span>  quitter sans sauv.</li>
         <li><span>:wq</span>  sauve et quitte.</li>
         <li><span>:w</span>  sauvegarde.</li>
-        <li><span>:set #option</span> active l'#option.
+        <li><span>:set <pre>#option</pre></span> active l'<pre>#option</pre>.
           <li><span>is</span> montre les appariments partiels</li>
           <li><span>ic</span> ignore la prochaine recherche.</li>
           <li><span>hls</span> met en surbrillance les mêmes mots.</li></li>
-        <li><span>:help #commande</span>  affiche l'aide de la #commande.</li>
+        <li><span>:help <pre>#commande</pre></span>  affiche l'aide de la <pre>#commande</pre>.</li>
         <li><span>u</span>  annuler.</li>
         <li><span>ctrl R</span> annuler l'annulé.</li>
       </ul>
@@ -64,8 +64,8 @@
         <li><span>p</span>  coller.</li>
         <li><span>o</span> insert une ligne sous le curseur.</li>
         <li><span>O</span> insert une ligne sur le curseur.</li>
-        <li><span>:s/#mot1/#mot2/g</span>   remplace #mot1 par #mot2.</li>
-        <li><span>:%s/#mot1/mot2</span>   remplace tous les #mot1 par #mot2.</li>
+        <li><span>:s/<pre>#mot1</pre>/<pre>#mot2</pre>/g</span>   remplace <pre>#mot1</pre> par <pre>#mot2</pre>.</li>
+        <li><span>:%s/<pre>#mot1</pre>/<pre>#mot2</pre></span>   remplace tous les <pre>#mot1</pre> par <pre>#mot2</pre>.</li>
         </ul>
     </section>
     <section id="modes" class="blocpair">
@@ -76,7 +76,7 @@
           <li><span>r</span> remplacement</li>
           <li><span>v</span>  vision (permet la selection)</li>
           <li>en mode v:
-            <li ><span>:r #nom</span> insert ce que contient #nom.</li></li>
+          <li ><span>:r <pre>#nom</pre></span> insert ce que contient <pre>#nom</pre>.</li></li>
         </ul>
     </section>
   </body>
