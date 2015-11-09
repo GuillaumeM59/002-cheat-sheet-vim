@@ -5,6 +5,9 @@
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css"/>
     <title>Cheat sheet Vim</title>
+    <link rel="icon" type="image/x-icon" href="img/favovim.ico" />
+  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/img/favovim.ico" /><![endif]-->
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
     <header>
@@ -12,14 +15,6 @@
       <h1>VIM</h1>
       <p>Les Cheat-Sheet à la Guytou</p>
     </header>
-    <nav id="menu">
-      <ul>
-        <li><a href="#deplacements">Déplacements</a></li>
-        <li><a href="#actgen">Actions générales</a></li>
-        <li><a href="#actdir">Actions directes</a></li>
-        <li><a href="#modes">Modes</a></li>
-      </ul>
-    </nav>
     <section id="deplacements">
       <h2>Déplacements:</h2>
       <ul>
@@ -37,7 +32,7 @@
         </li>
       </ul>
     </section>
-    <section id="actgen" class="blocpair">
+    <section id="actgen">
       <h2>actions générales:</h2>
       <ul>
         <li><span>:q!</span>  quitter sans sauv.</li>
@@ -69,7 +64,7 @@
         <li><span>:%s/<pre>#mot1</pre>/<pre>#mot2</pre></span>   remplace tous les <pre>#mot1</pre> par <pre>#mot2</pre>.</li>
         </ul>
     </section>
-    <section id="modes" class="blocpair">
+    <section id="modes">
       <h2>Modes:</h2>
         <ul>
           <li><span>i</span>  insertion</li>
@@ -77,8 +72,17 @@
           <li><span>r</span> remplacement</li>
           <li><span>v</span>  vision (permet la selection)</li>
           <li>en mode v:
-          <li ><span>:r <pre>#nom</pre></span> insert ce que contient <pre>#nom</pre>.</li></li>
+          <ul>
+          <li ><span>:r <pre>#nom</pre></span> insert ce que contient <pre>#nom</pre>.</li></ul></li>
         </ul>
     </section>
+    <nav id="menu">
+      <ul>
+        <li><a href="#deplacements">Déplacements</a></li>
+        <li><a href="#actgen">Actions générales</a></li>
+        <li><a href="#actdir">Actions directes</a></li>
+        <li><a href="#modes">Modes</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
