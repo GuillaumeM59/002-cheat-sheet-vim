@@ -39,9 +39,7 @@ background-color: #7F6553;
 border: 2px solid black;
 border-radius: 20px 0 0 20px;
 border-right: none;
- }
-#menu {
-  display: block;
+   display: block;
   font-size: 1.6em;
   font-weight: bold;
   margin-top: 0;
