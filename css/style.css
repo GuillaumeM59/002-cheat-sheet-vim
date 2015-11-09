@@ -32,7 +32,9 @@ header img {
 }
 
 /*nav style and fixed position*/
-nav{position: fixed;
+nav
+{display: block;
+  position: fixed;
 right: 0;
 top: 35%;
 background-color: #7F6553;
@@ -92,7 +94,7 @@ section pre {
 /* media queries device under 350px*/
 @media all and (max-device-width:350px) {
   body {font-size: 1em;}
-  header { width: 98%;margin-top: 20%;}
+  header { width: 98%; margin-left: 0;margin-top: 25%;}
   header img, header h1 {display:inline-block;}
   nav {position: fixed; display: block;top: 0; left: 0;width: 100%;margin:0;padding: 0;
     border: 2px solid black;
