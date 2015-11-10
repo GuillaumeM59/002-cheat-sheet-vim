@@ -1,80 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css"/>
-    <title>Cheat sheet Vim</title>
-    <link rel="icon" type="image/x-icon" href="img/favovim.ico" />
+
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet" type="text/css" />
+  <title>Cheat sheet Vim</title>
+  <link rel="icon" type="image/x-icon" href="img/favovim.ico" />
   <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/img/favovim.ico" /><![endif]-->
-    <meta name="viewport" content="width=device-width" />
-  </head>
-  <body>
-    <header>
-      <img src="img/vim_icon.jpg" alt="logo VIM" id="logo"/>
-      <h1>VIM</h1>
-      <p>Les Cheat-Sheet à la Guytou</p>
-    </header>
+  <!--<meta name="viewport" content="width=device-width" />-->
+</head>
+
+<body>
+  <header>
+    <img src="img/vim_icon.jpg" alt="logo VIM" id="logo" />
+    <h1>VIM</h1>
+    <p>Les Cheat-Sheet à la Guytou</p>
+  </header>
+  <article>
+
     <section id="deplacements">
       <h2>Déplacements:</h2>
       <ul>
-        <li><span>h</span>(gauche) <span>k</span>(haut) <span>l</span>(droite) <span>j</span>(bas)  se deplacer.</li>
-        <li><span>n</span> décalle au mot suivant (1ere lettre)</li>
-        <li><span>e</span> décalle au mot suivant (dernière lettre).</li>
-        <li><span>0</span> première lettre de la ligne.</li>
-        <li><span>gg</span> debut du fichier.</li>
-        <li><span>G</span> fin du fichier.</li>
-        <li><span>c<pre>#nombre</pre>w</span> déplace de <pre>#nombre</pre> mot(s).</li>
-        <li><span>%</span>  deplace au ) ] } correspondant à celui où l'on est.</li>
-        <li><span>/<pre>#mot</pre></span>  recherche <pre>#mot</pre>.
-          <li><span>n</span>   <pre>#mot</pre> suivant.</li>
-          <li><span>N</span>   <pre>#mot</pre> précédent.</li>
+        <li>
+          <span>h</span>(gauche)
+          <span>k</span>(haut)
+          <span>l</span>(droite)
+          <span>j</span>(bas) se deplacer.</li>
+        <li>
+          <span>n</span> décalle au mot suivant (1ere lettre)</li>
+        <li>
+          <span>e</span> décalle au mot suivant (dernière lettre).</li>
+        <li>
+          <span>0</span> première lettre de la ligne.</li>
+        <li>
+          <span>gg</span> debut du fichier.</li>
+        <li>
+          <span>G</span> fin du fichier.</li>
+        <li>
+          <span>c
+            <pre>#nombre</pre>w</span> déplace de
+          <pre>#nombre</pre> mot(s).</li>
+        <li>
+          <span>%</span> deplace au ) ] } correspondant à celui où l'on est.</li>
+        <li>
+          <span>/
+            <pre>#mot</pre>
+          </span> recherche
+          <pre>#mot</pre>.
+          <li>
+            <span>n</span>
+            <pre>#mot</pre> suivant.</li>
+          <li>
+            <span>N</span>
+            <pre>#mot</pre> précédent.</li>
         </li>
       </ul>
     </section>
     <section id="actgen">
       <h2>actions générales:</h2>
       <ul>
-        <li><span>:q!</span>  quitter sans sauv.</li>
-        <li><span>:wq</span>  sauve et quitte.</li>
-        <li><span>:w</span>  sauvegarde.</li>
-        <li><span>:set <pre>#option</pre></span> active l'<pre>#option</pre>.
-        <ul>
-          <li><span>is</span> montre les appariments partiels</li>
-          <li><span>ic</span> ignore la prochaine recherche.</li>
-          <li><span>hls</span> met en surbrillance les mêmes mots.</li></ul></li>
-        <li><span>:help <pre>#commande</pre></span>  affiche l'aide de la <pre>#commande</pre>.</li>
-        <li><span>u</span>  annuler.</li>
-        <li><span>ctrl R</span> annuler l'annulé.</li>
+        <li>
+          <span>:q!</span> quitter sans sauv.</li>
+        <li>
+          <span>:wq</span> sauve et quitte.</li>
+        <li>
+          <span>:w</span> sauvegarde.</li>
+        <li>
+          <span>:set
+            <pre>#option</pre>
+          </span> active l'
+          <pre>#option</pre>.
+          <ul>
+            <li>
+              <span>is</span> montre les appariments partiels</li>
+            <li>
+              <span>ic</span> ignore la prochaine recherche.</li>
+            <li>
+              <span>hls</span> met en surbrillance les mêmes mots.</li>
+          </ul>
+        </li>
+        <li>
+          <span>:help
+            <pre>#commande</pre>
+          </span> affiche l'aide de la
+          <pre>#commande</pre>.</li>
+        <li>
+          <span>u</span> annuler.</li>
+        <li>
+          <span>ctrl R</span> annuler l'annulé.</li>
       </ul>
     </section>
     <section id="actdir">
       <h2>Actions directes:</h2>
       <ul>
-        <li><span>x</span>  supprimer.</li>
-        <li><span>d</span>  effacer.</li>
-        <li><span>dw</span> efface le mot.</li>
-        <li><span>d$</span> efface le reste.</li>
-        <li><span>dd</span>  couper.</li>
-        <li><span>y</span>  copier.</li>
-        <li><span>p</span>  coller.</li>
-        <li><span>o</span> insert une ligne sous le curseur.</li>
-        <li><span>O</span> insert une ligne sur le curseur.</li>
-        <li><span>:s/<pre>#mot1</pre>/<pre>#mot2</pre>/g</span>   remplace <pre>#mot1</pre> par <pre>#mot2</pre>.</li>
-        <li><span>:%s/<pre>#mot1</pre>/<pre>#mot2</pre></span>   remplace tous les <pre>#mot1</pre> par <pre>#mot2</pre>.</li>
-        </ul>
+        <li>
+          <span>x</span> supprimer.</li>
+        <li>
+          <span>d</span> effacer.</li>
+        <li>
+          <span>dw</span> efface le mot.</li>
+        <li>
+          <span>d$</span> efface le reste.</li>
+        <li>
+          <span>dd</span> couper.</li>
+        <li>
+          <span>y</span> copier.</li>
+        <li>
+          <span>p</span> coller.</li>
+        <li>
+          <span>o</span> insert une ligne sous le curseur.</li>
+        <li>
+          <span>O</span> insert une ligne sur le curseur.</li>
+        <li>
+          <span>:s/
+            <pre>#mot1</pre>/
+            <pre>#mot2</pre>/g</span> remplace
+          <pre>#mot1</pre> par
+          <pre>#mot2</pre>.</li>
+        <li>
+          <span>:%s/
+            <pre>#mot1</pre>/
+            <pre>#mot2</pre>
+          </span> remplace tous les
+          <pre>#mot1</pre> par
+          <pre>#mot2</pre>.</li>
+      </ul>
     </section>
     <section id="modes">
       <h2>Modes:</h2>
-        <ul>
-          <li><span>i</span>  insertion</li>
-          <li><span>a</span>  ajout</li>
-          <li><span>r</span> remplacement</li>
-          <li><span>v</span>  vision (permet la selection)</li>
-          <li>en mode v:
+      <ul>
+        <li>
+          <span>i</span> insertion</li>
+        <li>
+          <span>a</span> ajout</li>
+        <li>
+          <span>r</span> remplacement</li>
+        <li>
+          <span>v</span> vision (permet la selection)</li>
+        <li>en mode v:
           <ul>
-          <li ><span>:r <pre>#nom</pre></span> insert ce que contient <pre>#nom</pre>.</li></ul></li>
-        </ul>
+            <li>
+              <span>:r
+                <pre>#nom</pre>
+              </span> insert ce que contient
+              <pre>#nom</pre>.</li>
+          </ul>
+        </li>
+      </ul>
     </section>
     <nav id="menu">
       <ul>
@@ -83,6 +156,8 @@
         <li><a href="#actdir">Actions directes</a></li>
         <li><a href="#modes">Modes</a></li>
       </ul>
-    </nav>
-  </body>
+  </article>
+  </nav>
+</body>
+
 </html>
